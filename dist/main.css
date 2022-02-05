@@ -88,7 +88,10 @@ select {
   transform: translateX(6%);
 }
 .button-previous:hover {
-  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.24);
+}
+.button-previous:active {
+  transform: translateY(8%);
 }
 
 .button-next {
@@ -96,7 +99,10 @@ select {
   transform: translateX(-6%);
 }
 .button-next:hover {
-  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.24);
+}
+.button-next:active {
+  transform: translateY(8%);
 }
 
 .icon {
