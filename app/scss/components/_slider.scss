@@ -88,12 +88,14 @@
     flex-direction: column;
     padding: 1rem 0;
     @include media-query(large) {
-      display: block;
+       flex-direction: row;
+       gap: 0.5rem;
     }
   }
   &__name {
     font-weight: $fw-bold;
     color: $clr-primary-dark-blue;
+    font-size: 1rem;
   }
   &__role {
     font-weight: $fw-medium;

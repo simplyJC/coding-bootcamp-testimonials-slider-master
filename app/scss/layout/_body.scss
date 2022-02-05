@@ -9,26 +9,19 @@ body {
   justify-content: center;
   align-items: center;
   grid-template-rows: 1fr;
-  // background: url('/images/pattern-bg.svg') no-repeat, url('/images/pattern-curve.svg') no-repeat;
-  // background-position:  center 150px, bottom left;
-  // background-size: 300px 300px, 100%;
   background: url('/images/pattern-curve.svg') no-repeat;
-  background-position:   bottom left;
+  background-position: bottom left;
   background-size: 100%;
-  @include media-query (large){
+  @include media-query(large) {
     background-size: 50%;
   }
-
-  
-
 }
 
 .wrapper {
   padding: 1rem;
-  @include media-query(large){
+  @include media-query(large) {
     width: 900px;
   }
-  
 }
 
 //Footer
@@ -36,6 +29,9 @@ body {
   padding-top: 4rem;
   font-size: 11px;
   text-align: center;
+  @include media-query(large) {
+    padding-top: 0;
+  }
 }
 .attribution a {
   color: rgb(115, 82, 235);

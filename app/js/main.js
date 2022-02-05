@@ -37,7 +37,7 @@ const navigation = () => {
         ${users[slide].feedback}</p>
     </blockquote>
     <figcaption class="slider__name-role toggle">
-        <span class="slider__name">${users[slide].name}</span>
+        <h1 class="slider__name">${users[slide].name}</h1>
         <cite class="slider__role">${users[slide].role}</cite>
     </figcaption>
     `;
@@ -49,7 +49,7 @@ previousButton.addEventListener('click', navigation);
 nextButton.addEventListener('click', navigation);
 
 document.addEventListener('keydown', function (event) {
-  const key = event.key; // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
+  const key = event.key;
   console.log(key);
   const callback = {
     ArrowLeft: navigation,

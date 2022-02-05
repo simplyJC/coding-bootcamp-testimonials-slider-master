@@ -194,12 +194,14 @@ select {
 }
 @media (min-width: 900px) {
   .slider__name-role {
-    display: block;
+    flex-direction: row;
+    gap: 0.5rem;
   }
 }
 .slider__name {
   font-weight: 700;
   color: #202046;
+  font-size: 1rem;
 }
 .slider__role {
   font-weight: 500;
@@ -272,6 +274,11 @@ body {
   padding-top: 4rem;
   font-size: 11px;
   text-align: center;
+}
+@media (min-width: 900px) {
+  .attribution {
+    padding-top: 0;
+  }
 }
 
 .attribution a {
