@@ -1,0 +1,25 @@
+.button-previous,
+.button-next {
+  border: none;
+  padding: 0.5rem 0.7rem;
+  background: hsl(0, 0%, 100%);
+}
+
+.button-previous {
+  border-radius: 1rem 0 0 1rem;
+  transform: translateX(6%);
+  &:hover {
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.24);
+  }
+}
+
+.button-next {
+  border-radius: 0 1rem 1rem 0;
+  transform: translateX(-6%);
+  &:hover {
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.24);
+  }
+}
+.icon {
+  width: 70%;
+}

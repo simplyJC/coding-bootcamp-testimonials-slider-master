@@ -12,6 +12,12 @@ body {
   // background: url('/images/pattern-bg.svg') no-repeat, url('/images/pattern-curve.svg') no-repeat;
   // background-position:  center 150px, bottom left;
   // background-size: 300px 300px, 100%;
+  background: url('/images/pattern-curve.svg') no-repeat;
+  background-position:   bottom left;
+  background-size: 100%;
+  @include media-query (large){
+    background-size: 50%;
+  }
 
   
 

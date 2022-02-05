@@ -26,16 +26,17 @@ const navigation = () => {
   if (slide > users.length - 1) {
     slide = 0;
   }
-  image.innerHTML = `
-    <img class="slider__image" src="${users[slide].image}"/>
-  `;
 
+  image.innerHTML = `
+    <img class="slider__image toggle " src="${users[slide].image}"/>
+  `;
+  
   content.innerHTML = `
     <blockquote>
-        <p class="slider__content">
+        <p class="slider__content toggle">
         ${users[slide].feedback}</p>
     </blockquote>
-    <figcaption class="slider__name-role">
+    <figcaption class="slider__name-role toggle">
         <span class="slider__name">${users[slide].name}</span>
         <cite class="slider__role">${users[slide].role}</cite>
     </figcaption>
@@ -46,3 +47,13 @@ navigation();
 
 previousButton.addEventListener('click', navigation);
 nextButton.addEventListener('click', navigation);
+
+document.addEventListener('keydown', function (event) {
+  const key = event.key; // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
+  console.log(key);
+  const callback = {
+    ArrowLeft: navigation,
+    ArrowRight: navigation,
+  }[event.key];
+  callback?.();
+});
