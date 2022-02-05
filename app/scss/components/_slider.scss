@@ -1,0 +1,88 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.slider {
+  // max-width: 400px;
+  //min-width: 300px;
+
+  max-width: 300px;
+  &-top-container {
+    //  position: relative;
+    //  padding: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    //border: 1px solid;
+  }
+  &__image-container {
+    width: 80%;
+    // border: 1px;
+    // margin: auto auto;
+    //border: 1px solid;
+    justify-self: center;
+    box-shadow: 0px 19px 24px -2px rgba(0, 0, 194, 0.24);
+  }
+  &__buttons-container {
+    //position: absolute;
+    //    right:50%;
+    //    bottom:10px ;
+    justify-self: center;
+    transform: translateY(-20%);
+  }
+
+  &-bottom-container {
+    // padding: 3rem 1rem 0 2rem;
+    padding: 3rem 0;
+
+    //width: 350px;
+    height: 300px;
+    text-align: center;
+    background: url('/images/pattern-quotes.svg') no-repeat center top;
+    background-size: 30%;
+  }
+  &__content {
+    font-family: $ff-primary-inter;
+    font-weight: $fw-medium;
+    color: $clr-primary-dark-blue;
+  }
+  &__name-role {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  &__name {
+    font-weight: $fw-bold;
+    color: $clr-primary-dark-blue;
+  }
+  &__role {
+    font-weight: $fw-medium;
+    font-style: normal;
+    color: $clr-grayish-blue;
+  }
+}
+
+//Buttons Layout
+.button-previous,
+.button-next {
+  border: none;
+  padding: 0.5rem 0.7rem;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0px 19px 24px -2px rgba(0, 0, 194, 0.24);
+}
+
+.button-previous {
+  border-radius: 1rem 0 0 1rem;
+  transform: translateX(7%);
+}
+
+.button-next {
+  border-radius: 0 1rem 1rem 0;
+
+  transform: translateX(-7%);
+}
+.icon {
+  width: 70%;
+}

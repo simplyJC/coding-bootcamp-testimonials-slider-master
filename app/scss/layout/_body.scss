@@ -1,0 +1,32 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: $ff-primary-inter;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: url('/images/pattern-bg.svg') no-repeat, url('/images/pattern-curve.svg') no-repeat;
+  background-position:  center 150px, bottom left;
+  background-size: 300px 300px, 100%;
+
+  
+
+}
+
+.wrapper {
+  padding: 1rem;
+  
+}
+
+//Footer
+.attribution {
+  padding-top: 4rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: rgb(115, 82, 235);
+}

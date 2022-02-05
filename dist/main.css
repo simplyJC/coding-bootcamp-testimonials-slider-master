@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+/* Box sizing rules - Kevin Powell */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.slider {
+  max-width: 300px;
+}
+.slider-top-container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+.slider__image-container {
+  width: 80%;
+  justify-self: center;
+  box-shadow: 0px 19px 24px -2px rgba(0, 0, 194, 0.24);
+}
+.slider__buttons-container {
+  justify-self: center;
+  transform: translateY(-20%);
+}
+.slider-bottom-container {
+  padding: 3rem 0;
+  height: 300px;
+  text-align: center;
+  background: url("/images/pattern-quotes.svg") no-repeat center top;
+  background-size: 30%;
+}
+.slider__content {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #202046;
+}
+.slider__name-role {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.slider__name {
+  font-weight: 700;
+  color: #202046;
+}
+.slider__role {
+  font-weight: 500;
+  font-style: normal;
+  color: #babacf;
+}
+
+.button-previous,
+.button-next {
+  border: none;
+  padding: 0.5rem 0.7rem;
+  background: white;
+  box-shadow: 0px 19px 24px -2px rgba(0, 0, 194, 0.24);
+}
+
+.button-previous {
+  border-radius: 1rem 0 0 1rem;
+  transform: translateX(7%);
+}
+
+.button-next {
+  border-radius: 0 1rem 1rem 0;
+  transform: translateX(-7%);
+}
+
+.icon {
+  width: 70%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/pattern-bg.svg") no-repeat, url("/images/pattern-curve.svg") no-repeat;
+  background-position: center 150px, bottom left;
+  background-size: 300px 300px, 100%;
+}
+
+.wrapper {
+  padding: 1rem;
+}
+
+.attribution {
+  padding-top: 4rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #7352eb;
+}/*# sourceMappingURL=main.css.map */
