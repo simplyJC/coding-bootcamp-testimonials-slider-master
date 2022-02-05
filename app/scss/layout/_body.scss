@@ -20,7 +20,8 @@ body {
 .wrapper {
   padding: 1rem;
   @include media-query(large) {
-    width: 900px;
+    width: 1200px;
+    height: 600px;
   }
 }
 
